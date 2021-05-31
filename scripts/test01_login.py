@@ -12,6 +12,7 @@ from tools.json_util import json_util
 
 
 # @allure.feature("注册登录模块")
+# class TestLogin:
 class TestLogin:
     # phone = "13490479087"
     # phone2 = "13433333333"
@@ -75,15 +76,28 @@ class TestLogin:
                              json_util("login.json", "test04_login",
                                        "desc,phone,password,status_code,status,description"))
     @allure.story("登录功能")
-    def test04_login(self, args):
+    def test04_login(self,args):
         allure.story(args[0])
         response = self.login.get_login(self.session, args[1], args[2])
         logging.info("测试登录{}".format(response.json().get("description")))
+        self.assert_all.assert_all(response,description=args[5],status_code=args[3],status=args[4])
         i = 0
-        if "账号已被锁定" in response.json().get("description"):
-            i += 1
-            print(i)
-            if i == 2:
-                time.sleep(61)
-        # 断言
-        self.assert_all.assert_all(response, description=args[5], status_code=args[3], status=args[4])
+        if i <= 2:
+            for i in range(2):
+                i += 1
+                response = self.login.get_login(self.session, args[1], args[2])
+                logging.info("测试登录{}".format(response.json().get("description")))
+                self.assert_all.assert_all(response, "密码错误{}次,达到3次将锁定账户".format(i), 200, 100, )
+        if i == 2:
+            response = self.login.get_login(self.session, args[1], args[2])
+            logging.info("测试登录{}".format(response.json().get("description")))
+            self.assert_all.assert_all(response, "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录", 200, 100)
+        if i == 3:
+            response = self.login.get_login(self.session, args[1], args[2])
+            logging.info("测试登录{}".format(response.json().get("description")))
+            self.assert_all.assert_all(response, "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录", 200, 100)
+        else:
+            time.sleep(61)
+            response = self.login.get_login(self.session, args[1], args[2])
+            logging.info("测试登录{}".format(response.json().get("description")))
+        self.assert_all.assert_all(response, "登录成功")

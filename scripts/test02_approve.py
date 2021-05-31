@@ -8,17 +8,18 @@ from api.login_api import LoginApi
 from tools.assert_all import AssertAll
 
 
-class TestApprove(unittest.TestCase):
+class TestApprove:
+# class TestApprove(unittest.TestCase):
     realname = "张德帅"
     card_id = "543222345678909876"
 
-    def setUp(self) -> None:
+    def setup(self) -> None:
         self.login = LoginApi()
         self.approve = ApproveApi()
         self.session = requests.session()
         self.assert_all = AssertAll()
 
-    def tearDown(self) -> None:
+    def teardown(self) -> None:
         self.session.close()
 
     # 认证成功

@@ -1,2 +1,0 @@
-2021-05-30 19:34:35,749INFO[root][test01_login.py(test01_get_img_verifycode_success:29)-测试验证码]
-2021-05-30 19:34:35,983INFO[root][test01_login.py(test01_get_img_verifycode_success:33)-测试验证码成功<Response [200]>]

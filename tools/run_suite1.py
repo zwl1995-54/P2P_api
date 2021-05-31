@@ -31,17 +31,17 @@ case_path = app.BASE_PATH + "%sscripts%s" % (os.sep, os.sep)
 # 指定测试报告生成的路径
 report_path = app.BASE_PATH + "%sreport%s%s" % (os.sep, os.sep, format(time.strftime("%Y%m%d-%H%M%S")) + ".html")
 
-def all_case():
-    discover = unittest.defaultTestLoader.discover(case_path, pattern="test*.py", top_level_dir=None)
-    print(discover)
-    return discover
-
-if __name__ == '__main__':
-    from tools.HTMLTestRunner import HTMLTestRunner
-
-    fp = open(report_path, "wb")
-    # with open(path, "wb") as f:
-    runner = HTMLTestRunner(fp, title="接口测试", description="test")
-    # runner = unittest.TextTestRunner(f,descriptions="test")
-    runner.run(all_case())
-    fp.close()
+# def all_case():
+#     discover = unittest.defaultTestLoader.discover(case_path, pattern="test*.py", top_level_dir=None)
+#     print(discover)
+#     return discover
+#
+# if __name__ == '__main__':
+#     from tools.HTMLTestRunner import HTMLTestRunner
+# 
+#     fp = open(report_path, "wb")
+#     # with open(path, "wb") as f:
+#     runner = HTMLTestRunner(fp, title="接口测试", description="test")
+#     # runner = unittest.TextTestRunner(f,descriptions="test")
+#     runner.run(all_case())
+#     fp.close()

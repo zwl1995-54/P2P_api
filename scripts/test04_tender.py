@@ -11,15 +11,16 @@ from tools.connect_database import DBUtils
 from tools.third_request import ThirdRequest
 
 
-class TestTender(unittest.TestCase):
-    def setUp(self) -> None:
+# class TestTender(unittest.TestCase):
+class TestTender:
+    def setup(self) -> None:
         self.session = requests.session()
         self.login = LoginApi()
         self.third_request = ThirdRequest()
         self.assert_all = AssertAll()
         self.tender = TenderApi(self.session)
 
-    def tearDown(self) -> None:
+    def teardown(self) -> None:
         self.session.close()
         logging.info("关闭session成功")
         # sql1 = "delete phone from mb_member_register_log where phone in('13490479087','1','1','1');"

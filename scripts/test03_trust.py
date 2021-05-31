@@ -10,15 +10,16 @@ from tools.assert_all import AssertAll
 from tools.third_request import ThirdRequest
 
 
-class TestTrust(unittest.TestCase):
-    def setUp(self) -> None:
+# class TestTrust(unittest.TestCase):
+class TestTrust:
+    def setup(self) -> None:
         self.login = LoginApi()
         self.trust = TrustApi()
         self.third_request = ThirdRequest()
         self.assert_all = AssertAll()
         self.session = requests.session()
 
-    def tearDown(self) -> None:
+    def teardown(self) -> None:
         self.session.close()
 
     # 申请开户成功
