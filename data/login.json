@@ -1,0 +1,68 @@
+{
+  "test04_login": [
+    {
+      "desc": "登录功能",
+      "phone": "13722345678",
+      "password": "a123456",
+      "status_code": 200,
+      "status": 200,
+      "description": "登录成功"
+    },
+    {
+      "desc": "用户不存在",
+      "phone": "13722340678",
+      "password": "a123456",
+      "status_code": 200,
+      "status": 100,
+      "description": "用户不存在"
+    },
+    {
+      "desc": "密码不能为空",
+      "phone": "13722045678",
+      "password": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码不能为空"
+    },
+    {
+      "desc": "密码错误1次,达到3次将锁定账户",
+      "phone": "13722345678",
+      "password": "a1234111156",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码错误1次,达到3次将锁定账户"
+    },
+    {
+      "desc": "密码错误2次,达到3次将锁定账户",
+      "phone": "13722345678",
+      "password": "a1234111156",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码错误2次,达到3次将锁定账户"
+    },
+    {
+      "desc": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录",
+      "phone": "13722345678",
+      "password": "a1234111156",
+      "status_code": 200,
+      "status": 100,
+      "description": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录"
+    },
+    {
+      "desc": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录",
+      "phone": "13722345678",
+      "password": "a123456",
+      "status_code": 200,
+      "status": 100,
+      "description": "由于连续输入错误密码达到上限，账号已被锁定，请于1.0分钟后重新登录"
+    },
+    {
+      "desc": "密码解锁登录成功",
+      "phone": "13722345678",
+      "password": "a123456",
+      "status_code": 200,
+      "status": 200,
+      "description": "登录成功"
+    }
+  ]
+}

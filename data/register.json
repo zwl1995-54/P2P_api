@@ -1,0 +1,81 @@
+{
+  "test03_register": [
+    {
+      "desc": "注册",
+      "imgVerifyCode": "8888",
+      "phone": "13722345678",
+      "password": "a123456",
+      "dy_server": "on",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 200,
+      "description": "注册成功"
+    },
+    {
+      "desc": "手机已存在",
+      "imgVerifyCode": "8888",
+      "phone": "13722345678",
+      "password": "a123456",
+      "dy_server": "on",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 100,
+      "description": "手机已存在!"
+    },
+    {
+      "desc": "密码不能为空",
+      "imgVerifyCode": "8888",
+      "phone": "13912365678",
+      "password": "",
+      "dy_server": "on",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码不能为空"
+    },
+    {
+      "desc": "验证码错误",
+      "imgVerifyCode": "888",
+      "phone": "13312345678",
+      "password": "a123456",
+      "dy_server": "on",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 100,
+      "description": "验证码错误!"
+    },
+    {
+      "desc": "请同意我们的条款",
+      "imgVerifyCode": "8888",
+      "phone": "13612315678",
+      "password": "a123456",
+      "dy_server": "off",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 100,
+      "description": "请同意我们的条款"
+    },
+    {
+      "desc": "短信验证码不能为空",
+      "imgVerifyCode": "8888",
+      "phone": "13312345688",
+      "password": "a123456",
+      "dy_server": "on",
+      "phone_code": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "短信验证码不能为空"
+    },
+    {
+      "desc": "密码格式错误",
+      "imgVerifyCode": "8888",
+      "phone": "13314345698",
+      "password": "a12345自增长6",
+      "dy_server": "on",
+      "phone_code": "666666",
+      "status_code": 200,
+      "status": 100,
+      "description": "密码格式错误"
+    }
+  ]
+}

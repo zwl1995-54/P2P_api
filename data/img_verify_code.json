@@ -1,0 +1,34 @@
+{
+  "test1_get_img_verify_code": [
+    {
+      "desc": "获取图片验证码--参数为小数",
+      "type": "float",
+      "status_code": 200
+    },
+    {
+      "desc": "获取图片验证码--参数为整数",
+      "type": "int",
+      "status_code": 200
+    },
+    {
+      "desc": "获取图片验证码--参数为空",
+      "type": "null",
+      "status_code": 404
+    },
+    {
+      "desc": "获取图片验证码--参数为字母",
+      "type": "char",
+      "status_code": 400
+    },
+    {
+      "desc": "获取图片验证码--参数为字母数字组合",
+      "type": "str",
+      "status_code": 400
+    },
+    {
+      "desc": "获取图片验证码--参数为字母数字特殊字符组合",
+      "type": "str",
+      "status_code": 400
+    }
+  ]
+}

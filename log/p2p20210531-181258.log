@@ -1,0 +1,7 @@
+2021-05-31 18:12:58,992INFO[root][test01_login.py(test03_register:70)-测试注册成功注册成功]
+2021-05-31 18:12:59,339INFO[root][test01_login.py(test03_register:70)-测试注册成功手机已存在!]
+2021-05-31 18:12:59,982INFO[root][test01_login.py(test03_register:70)-测试注册成功注册成功]
+2021-05-31 18:13:00,504INFO[root][test01_login.py(test03_register:70)-测试注册成功验证码错误!]
+2021-05-31 18:13:01,213INFO[root][test01_login.py(test03_register:70)-测试注册成功注册成功]
+2021-05-31 18:13:01,660INFO[root][test01_login.py(test03_register:70)-测试注册成功短信验证码不能为空]
+2021-05-31 18:13:02,631INFO[root][test01_login.py(test03_register:70)-测试注册成功注册成功]

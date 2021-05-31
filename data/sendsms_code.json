@@ -1,0 +1,52 @@
+{
+  "test2_sendSms": [
+    {
+      "desc": "获取短信验证码",
+      "imgVerifyCode": "8888",
+      "phone": "13312345678",
+      "status_code": 200,
+      "status": 200,
+      "description": "短信发送成功"
+    },
+    {
+      "desc": "获取短信验证码--图片验证码错误",
+      "imgVerifyCode": "8809",
+      "phone": "13312345678",
+      "status_code": 200,
+      "status": 100,
+      "description": "图片验证码错误"
+    },
+    {
+      "desc": "获取短信验证码--图片验证码为空",
+      "imgVerifyCode": "",
+      "phone": "13312345678",
+      "status_code": 200,
+      "status": 100,
+      "description": "图片验证码错误"
+    },
+    {
+      "desc": "获取短信验证码--手机号已存在",
+      "imgVerifyCode": "8888",
+      "phone": "13433333333",
+      "status_code": 200,
+      "status": 200,
+      "description": "短信发送成功"
+    },
+    {
+      "desc": "获取短信验证码--手机号错误",
+      "imgVerifyCode": "8888",
+      "phone": "1323432256432",
+      "status_code": 200,
+      "status": 200,
+      "description": "短信发送成功"
+    },
+    {
+      "desc": "获取短信验证码--手机号不能为空",
+      "imgVerifyCode": "8888",
+      "phone": "",
+      "status_code": 200,
+      "status": 100,
+      "description": "None"
+    }
+  ]
+}

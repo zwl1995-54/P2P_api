@@ -1,0 +1,8 @@
+2021-05-31 18:54:10,414INFO[root][test01_login.py(test04_login:81)-测试登录登录成功]
+2021-05-31 18:54:10,585INFO[root][test01_login.py(test04_login:81)-测试登录用户不存在]
+2021-05-31 18:54:10,749INFO[root][test01_login.py(test04_login:81)-测试登录密码不能为空]
+2021-05-31 18:54:10,935INFO[root][test01_login.py(test04_login:81)-测试登录密码错误1次,达到3次将锁定账户]
+2021-05-31 18:54:11,118INFO[root][test01_login.py(test04_login:81)-测试登录密码错误1次,达到3次将锁定账户]
+2021-05-31 18:54:11,535INFO[root][test01_login.py(test04_login:81)-测试登录密码错误1次,达到3次将锁定账户]
+2021-05-31 18:54:12,027INFO[root][test01_login.py(test04_login:81)-测试登录登录成功]
+2021-05-31 18:54:12,492INFO[root][test01_login.py(test04_login:81)-测试登录登录成功]

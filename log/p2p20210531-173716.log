@@ -1,0 +1,6 @@
+2021-05-31 17:37:16,336INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 200, 'description': '短信发送成功'}]
+2021-05-31 17:37:16,638INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 100, 'description': '图片验证码错误'}]
+2021-05-31 17:37:16,907INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 100, 'description': '图片验证码错误'}]
+2021-05-31 17:37:17,401INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 200, 'description': '短信发送成功'}]
+2021-05-31 17:37:17,682INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 200, 'description': '短信发送成功'}]
+2021-05-31 17:37:18,015INFO[root][test01_login.py(test2_sendSms:53)-测试短信验证码成功{'status': 100}]
