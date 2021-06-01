@@ -30,7 +30,7 @@ class TestLogin:
     @pytest.mark.parametrize("args",
                              json_util("img_verify_code.json", "test1_get_img_verify_code", "desc,type,status_code"))
     @allure.story("测试验证码图片验证码")
-    def test1_get_img_verify_code(self, args):
+    def test01_get_img_verify_code(self, args):
         print(args)
         allure.step(args[0])
         logging.info("测试验证码,{}".format(args[0]))
@@ -46,7 +46,7 @@ class TestLogin:
                              json_util("sendsms_code.json", "test2_sendSms",
                                        "desc,imgVerifyCode,phone,status_code,status,description"))
     @allure.story("测试短信验证码")
-    def test2_sendSms(self, args):
+    def test02_sendSms(self, args):
         self.login.get_img_verify_code(self.session, str(random.random()))
         allure.story(args[0])
         print(args[2])

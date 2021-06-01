@@ -56,7 +56,7 @@ class TestApprove:
     #     self.assert_all.assert_all(response, "身份证不能为空!", 200, 100, )
 
     # 获取认证信息
-    def test04_get_approve(self):
+    def test02_get_approve(self):
         # 前提要登录
         res = self.login.get_login(self.session)
         logging.info("登录成功{}".format(res.json()))
